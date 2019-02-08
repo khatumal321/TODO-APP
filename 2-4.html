@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .change1{
+        margin: 200px;
+    }
+    .change2{
+        font-size: 100px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+</style>
+<body>
+    <div>
+        <h1 class="change1" id="change" style="font-size: 50px; font-family: 'Courier New', Courier, monospace" onmouseover="changePic()" onmouseout="changePic2()">Color changing</h1>
+    </div>
+
+    <div id="text">
+        <input type="button" value="Click here" onclick="second()">
+    </div>
+
+
+
+    <script>
+var c = document.getElementById("change").className += " change2"
+function changePic() {
+var a = document.getElementById("change")
+a.style.color = "green";
+}
+function changePic2() {
+var b = document.getElementById("change")
+b.style.color = "red";
+}
+
+function second() {
+    var text1 = getElementById("text");
+}
+
+    </script>
+</body>
+</html>
